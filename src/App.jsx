@@ -5,15 +5,14 @@ import { ExpenseTracker } from "./pages/expense-tracker/index";
 function App() {
   return (
     <div className="App">
-      <Router>
+      <Router basename="/Expense-Tracker-Firebase">
         <Routes>
-          <Route path="/" exact  element={<Auth />} />
+          <Route path="/" exact element={<Auth />} />
           <Route path="/expense-tracker" exact element={<ExpenseTracker />} />
         </Routes>
       </Router>
     </div>
-  
-    );
+  );
 }
 
 export default App;
